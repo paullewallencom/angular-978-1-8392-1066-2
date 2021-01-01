@@ -1,0 +1,29 @@
+/* You can add global styles to this file, and also import other style files */
+form {
+  margin: 15px;
+}
+
+div {
+  padding-bottom: 10px;
+}
+
+label {
+  padding-right: 10px;
+}
+
+.ng-touched:not(form) {
+  border: 3px solid lightblue;
+}
+
+.ng-dirty.ng-valid:not(form) {
+  border: 2px solid green;
+}
+
+.ng-dirty.ng-invalid:not(form) {
+  border: 2px solid red;
+}
+
+.help-block {
+  margin: 5px;
+  color: crimson;
+}

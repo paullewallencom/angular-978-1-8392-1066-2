@@ -1,0 +1,11 @@
+<div>
+  <button mat-icon-button (click)="state = 'large'">
+    <mat-icon>zoom_in</mat-icon>
+  </button>
+  <button mat-icon-button (click)="state = 'small'">
+    <mat-icon>zoom_out</mat-icon>
+  </button>
+  <p class="animate" [@sizeAnimation]="state" (@sizeAnimation.start)="started($event)" (@sizeAnimation.done)="finished($event)">
+    Hello Angular 10
+  </p>
+</div>

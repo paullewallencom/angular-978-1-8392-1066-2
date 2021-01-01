@@ -1,0 +1,5 @@
+<mat-selection-list (selectionChange)="completeMission($event.option.value)">
+  <mat-list-option *ngFor="let mission of hero.missions" [value]="mission">
+    <span [style.color]="getPriorityColor(mission)">{{mission.title}}</span>
+  </mat-list-option>
+</mat-selection-list>
